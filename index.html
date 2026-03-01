@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OrderX – McDonald's</title>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  
-  <link rel="stylesheet" href="./styles/output.css" />  
-
-
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles/output.css" />
 </head>
-<body class="bg-[#FFFFFF] font-sans text-gray-800 pt-[85px] max-w-[1920px] mx-auto overflow-x-hidden min-w-[1280px]">
+<body class="bg-white font-sans text-gray-800 pt-[85px] max-w-[1920px] mx-auto overflow-x-hidden min-w-[1280px]">
 
+<!-- Navegación -->
 <header class="mx-[100px]">
-
-  <nav class="mx-[30px] flex px-[8px] py-[16px]">
-    <img class="h-[53px] w-[215px]" src="./assets/images/logo-order.png" alt="logo">
-    <div class="flex flex-1 gap-[39px] text-lg text-gray-600 justify-end items-center">
-      <a href="#" class="font-medium text-black">Home</a>
-      <a href="#" class="font-medium text-black">Special Offers</a>
-
-      <a href="#" class="font-medium text-white px-10 py-[9px] bg-[#FC8A06] rounded-full">Restaurants</a>
-      <a href="#" class="font-medium text-black">Track Order</a>
-      <button class="font-medium text-white px-10 py-[18px] bg-[#03081F] rounded-full ">Login / Signup</button>
-    </div>
+  <nav class="mx-[30px] flex px-[8px] py-[16px] items-center">
+    <a href="#">
+      <img class="h-[53px] w-[215px]" src="./assets/images/logo-order.png" alt="OrderX logo">
+    </a>
+    <ul class="flex flex-1 gap-[39px] text-lg justify-end items-center list-none">
+      <li><a href="#" class="font-medium text-black hover:text-[#FC8A06]">Home</a></li>
+      <li><a href="#" class="font-medium text-black hover:text-[#FC8A06]">Special Offers</a></li>
+      <li><a href="#" class="font-medium text-white px-10 py-[9px] bg-[#FC8A06] rounded-full">Restaurants</a></li>
+      <li><a href="#" class="font-medium text-black hover:text-[#FC8A06]">Track Order</a></li>
+      <li><a href="#" class="font-medium text-white px-10 py-[18px] bg-[#03081F] rounded-full">Login / Signup</a></li>
+    </ul>
   </nav>
 
+  <!-- Hero -->
+  <section class="mt-[64px] h-[477px] rounded-xl flex relative">
+    <img src="./assets/images/banner.png" alt="McDonald's East London" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-[#03081FE5] opacity-98 rounded-xl"></div>
 
-<div class="mt-[64px] h-[477px] rounded-xl  flex relative">
-
-  <!-- Imagen de fondo -->
-  <img src="./assets/images/banner.png" alt="bg" class="absolute inset-0 w-full h-full object-cover" />
-  
-  <!-- Capa azul transparente encima -->
-  <div class="absolute inset-0 bg-[#03081FE5] opacity-98"></div>
-
-  <!-- IZQUIERDA: contenido -->
-<div class="relative z-10 flex-1 h-full">
-  
-  <!-- I'm lovin' it! → 171px del top -->
-  <p class="absolute top-[171px] left-[57px] text-gray-400 font-normal text-xl">
-    I'm lovin' it!
-  </p>
-
-  <!-- McDonald's → 227px del top -->
-  <h1 class="absolute top-[227px] left-[57px] text-white text-6xl font-semibold">
-    McDonald's East London
-  </h1>
-
-  <!-- Badges → 324px del top -->
-  <div class="absolute top-[324px] left-[57px] flex gap-4">
-    <div class="border border-white text-white px-6 py-3 rounded-full flex items-center gap-2 text-[18px] font-semibold ">
-      <img class="h-[34px] w-[34px]" src="assets/images/check.png" alt=""> Minimum Order: 12 GBP
-    </div>
-    <div class="border border-white text-white px-6 py-3 rounded-full flex items-center gap-2 text-[18px] font-semibold">
-      <img class="h-[34px] w-[34px]" src="assets/images/bike.png" alt=""> Delivery in 20–25 Minutes
-    </div>
-  </div>
-
-  <!-- Botón → 445px del top -->
-  <button class="absolute top-[445px]  bg-[#FC8A06] text-white  py-3  px-14 font-semibold flex items-center gap-2 z-10 rounded-tr-xl rounded-br-xl">
-    <img class="h-[29px] w-[29px]" src="assets/images/relo.png" alt=""> Open until 3:00 AM
-  </button>
-
-</div>
-
-  <!-- DERECHA: imagen hamburguesa + card score -->
-  <div class="relative z-10 w-[581px] h-full">
-    
-    <!-- Hamburguesa -->
-<img src="./assets/images/banner.png" alt="burger" 
-  class="absolute top-[57px] right-[62px] w-[581px] h-[361px] object-cover rounded-xl" />
-    <!-- Card estrellas -->
-    <div class="absolute bottom-[51px] left-[-145px] bg-white rounded-xl p-3 shadow-lg">
-      <img src="./assets/images/estrellas.png" alt="stars" class="w-[136px] h-[158px]" />
+    <!-- Contenido izquierdo -->
+    <div class="relative z-10 flex-1 h-full">
+      <p class="absolute top-[171px] left-[57px] text-gray-400 font-normal text-xl">I'm lovin' it!</p>
+      <h1 class="absolute top-[227px] left-[57px] text-white text-6xl font-semibold">McDonald's East London</h1>
+      <div class="absolute top-[324px] left-[57px] flex gap-4">
+        <div class="border border-white text-white px-6 py-3 rounded-full flex items-center gap-2 text-[18px] font-semibold">
+          <img class="h-[34px] w-[34px]" src="assets/images/check.png" alt=""> Minimum Order: 12 GBP
+        </div>
+        <div class="border border-white text-white px-6 py-3 rounded-full flex items-center gap-2 text-[18px] font-semibold">
+          <img class="h-[34px] w-[34px]" src="assets/images/bike.png" alt=""> Delivery in 20–25 Minutes
+        </div>
+      </div>
+      <button class="absolute top-[445px] bg-[#FC8A06] text-white py-3 px-14 font-semibold flex items-center gap-2 z-10 rounded-tr-xl rounded-br-xl">
+        <img class="h-[29px] w-[29px]" src="assets/images/relo.png" alt=""> Open until 3:00 AM
+      </button>
     </div>
 
-  </div>
-
-</div>
-
+    <!-- Contenido derecho -->
+    <div class="relative z-10 w-[581px] h-full">
+      <img src="./assets/images/banner.png" alt="Hamburguesa" class="absolute top-[57px] right-[62px] w-[581px] h-[361px] object-cover rounded-xl" />
+      <div class="absolute bottom-[51px] left-[-145px] bg-white rounded-xl p-3 shadow-lg">
+        <img src="./assets/images/estrellas.png" alt="Rating" class="w-[136px] h-[158px]" />
+      </div>
+    </div>
+  </section>
 </header>
 
-
-
-<!-- ALL OFFERS + SEARCH -->
-<div class="mx-[130px] mt-[64px] flex items-center justify-between">
+<!-- Búsqueda -->
+<section class="mx-[130px] mt-[64px] flex items-center justify-between">
   <h2 class="text-[32px] font-bold">All Offers from McDonald's East London</h2>
-<div class="border border-gray-300 rounded-full px-4 py-3 flex items-center gap-3 w-[380px]">
-  <img src="./assets/images/lupa.png" alt="search" class="w-[20px] h-[20px]" />
-  <input type="text" placeholder="Search from menu..." class="outline-none text-[18px] font-semibold text-[#03081F] bg-transparent w-full" />
-</div>
-</div>
+  <div class="border border-gray-300 rounded-full px-4 py-3 flex items-center gap-3 w-[380px]">
+    <img src="./assets/images/lupa.png" alt="Buscar" class="w-[20px] h-[20px]" />
+    <input type="search" placeholder="Search from menu..." class="outline-none text-[18px] font-semibold text-[#03081F] bg-transparent w-full" />
+  </div>
+</section>
 
-<!-- FILTROS naranja -->
-<div class="bg-[#FC8A06]   mt-[46px]   flex gap-8 px-[95px] py-[30px] items-center">
+<!-- Filtros -->
+<nav class="bg-[#FC8A06] mt-[46px] flex gap-8 px-[95px] py-[30px] items-center overflow-x-auto">
   <button class="bg-[#03081F] text-white px-5 py-2 rounded-full font-bold text-[21px]">Offers</button>
   <button class="text-white font-bold text-[21px]">Burgers</button>
   <button class="text-white font-bold text-[21px]">Fries</button>
@@ -108,58 +78,49 @@
   <button class="text-white font-bold text-[21px]">Hot drinks</button>
   <button class="text-white font-bold text-[21px]">Sauces</button>
   <button class="text-white font-bold text-[21px]">Orbit®</button>
-</div>
+</nav>
 
-<!-- OFERTAS con imagen -->
-<div class="mx-[100px] mt-[103px] grid grid-cols-3 gap-[20px]">
+<!-- Ofertas -->
+<section class="mx-[100px] mt-[103px] grid grid-cols-3 gap-[20px]">
 
-  <!-- Oferta 1 -->
-  <div class="relative rounded-xl overflow-hidden h-[325px]">
+  <article class="relative rounded-xl overflow-hidden h-[325px]">
     <img src="./assets/images/woman.png" alt="First Order Discount" class="absolute inset-0 w-full h-full object-cover" />
     <div class="absolute right-[30px] bg-[#03081F] text-white text-[18px] font-bold px-[20px] py-[20px] rounded-bl-xl rounded-br-xl">-20%</div>
-
-<div class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-[#03081F30] to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-[#03081F30] to-transparent"></div>
     <div class="absolute bottom-4 left-4">
       <p class="text-[#FC8A06] text-[18px] font-medium">McDonald's East London</p>
       <p class="text-white font-bold text-[32px]">First Order Discount</p>
     </div>
-  </div>
+  </article>
 
-  <!-- Oferta 2 -->
-  <div class="relative rounded-xl overflow-hidden h-[325px] ">
-    <img src="./assets/images/eat.png" alt="First Order Discount" class="absolute inset-0 w-full h-full object-cover" />
+  <article class="relative rounded-xl overflow-hidden h-[325px]">
+    <img src="./assets/images/eat.png" alt="Vegan Discount" class="absolute inset-0 w-full h-full object-cover" />
     <div class="absolute right-[30px] bg-[#03081F] text-white text-[18px] font-bold px-[20px] py-[20px] rounded-bl-xl rounded-br-xl">-20%</div>
-
-<div class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-[#03081F30] to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-[#03081F30] to-transparent"></div>
     <div class="absolute bottom-4 left-4">
       <p class="text-[#FC8A06] text-[18px] font-medium">McDonald's East London</p>
       <p class="text-white text-[32px] font-bold">Vegan Discount</p>
     </div>
-  </div>
+  </article>
 
-  <!-- Oferta 3 -->
-  <div class="relative rounded-xl overflow-hidden h-[325px] ">
-    <img src="./assets/images/ice.png" alt="First Order Discount" class="absolute inset-0 w-full h-full object-cover" />
+  <article class="relative rounded-xl overflow-hidden h-[325px]">
+    <img src="./assets/images/ice.png" alt="Free Ice Cream Offer" class="absolute inset-0 w-full h-full object-cover" />
     <div class="absolute right-[30px] bg-[#03081F] text-white text-[18px] font-bold px-[20px] py-[20px] rounded-bl-xl rounded-br-xl">-100%</div>
-
-<div class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-[#03081F30] to-transparent"></div>
-
+    <div class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-[#03081F30] to-transparent"></div>
     <div class="absolute bottom-4 left-4">
       <p class="text-[#FC8A06] text-[18px] font-medium">McDonald's East London</p>
       <p class="text-white text-[32px] font-bold">Free Ice Cream Offer</p>
     </div>
-  </div>
+  </article>
 
-</div>
+</section>
 
-  <!-- MENÚ --><!-- MENÚ BURGERS -->
-<div class="mx-[100px] mt-[60px]">
+<!-- Menú -->
+<section class="mx-[100px] mt-[60px]">
   <h2 class="text-[44px] font-bold mb-6">Burgers</h2>
-
   <div class="grid grid-cols-3 gap-4">
 
-    <!-- Card 1 -->
-    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px] ">
+    <article class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
       <div class="flex flex-col justify-between p-[25px] flex-1">
         <div>
           <p class="font-semibold text-[20px] leading-tight">Royal Cheese Burger with extra Fries</p>
@@ -168,15 +129,14 @@
         <p class="font-bold text-[18px] mb-[36px]">GBP 23.10</p>
       </div>
       <div class="relative w-[203px] h-[199px] m-[25px] flex-shrink-0">
-        <img src="./assets/images/burger1.png" alt="burger" class="w-full h-full object-cover rounded-xl" />
-        <button class="absolute bottom-0 right-0  rounded-tl-[50px] bg-gray-100/90 p-[18px]">
-          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="add"/>
+        <img src="./assets/images/burger1.png" alt="Royal Cheese Burger" class="w-full h-full object-cover rounded-xl" />
+        <button class="absolute bottom-0 right-0 rounded-tl-[50px] bg-gray-100/90 p-[18px]" aria-label="Agregar al carrito">
+          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="Agregar"/>
         </button>
       </div>
-    </div>
+    </article>
 
-    <!-- Card 2 -->
-    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
+    <article class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
       <div class="flex flex-col justify-between p-[25px] flex-1">
         <div>
           <p class="font-semibold text-[20px] leading-tight">The classics for 3</p>
@@ -185,15 +145,14 @@
         <p class="font-bold text-[18px] mb-[36px]">GBP 23.10</p>
       </div>
       <div class="relative w-[203px] h-[199px] m-[25px] flex-shrink-0">
-        <img src="./assets/images/burger2.png" alt="burger" class="w-full h-full object-cover rounded-xl" />
-        <button class="absolute bottom-0 right-0  rounded-tl-[50px] bg-gray-100/90 p-[18px]">
-          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="add"/>
+        <img src="./assets/images/burger2.png" alt="The classics for 3" class="w-full h-full object-cover rounded-xl" />
+        <button class="absolute bottom-0 right-0 rounded-tl-[50px] bg-gray-100/90 p-[18px]" aria-label="Agregar al carrito">
+          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="Agregar"/>
         </button>
       </div>
-    </div>
+    </article>
 
-    <!-- Card 3 -->
-    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
+    <article class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
       <div class="flex flex-col justify-between p-[25px] flex-1">
         <div>
           <p class="font-semibold text-[20px] leading-tight">The classics for 3</p>
@@ -202,15 +161,14 @@
         <p class="font-bold text-[18px] mb-[36px]">GBP 23.10</p>
       </div>
       <div class="relative w-[203px] h-[199px] m-[25px] flex-shrink-0">
-        <img src="./assets/images/burger3.png" alt="burger" class="w-full h-full object-cover rounded-xl" />
-        <button class="absolute bottom-0 right-0  rounded-tl-[50px] bg-gray-100/90 p-[18px]">
-          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="add"/>
+        <img src="./assets/images/burger3.png" alt="The classics for 3" class="w-full h-full object-cover rounded-xl" />
+        <button class="absolute bottom-0 right-0 rounded-tl-[50px] bg-gray-100/90 p-[18px]" aria-label="Agregar al carrito">
+          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="Agregar"/>
         </button>
       </div>
-    </div>
+    </article>
 
-    <!-- Card 4 -->
-    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
+    <article class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
       <div class="flex flex-col justify-between p-[25px] flex-1">
         <div>
           <p class="font-semibold text-[20px] leading-tight">The classics for 3</p>
@@ -219,15 +177,14 @@
         <p class="font-bold text-[18px] mb-[36px]">GBP 23.10</p>
       </div>
       <div class="relative w-[203px] h-[199px] m-[25px] flex-shrink-0">
-        <img src="./assets/images/burger4.png" alt="burger" class="w-full h-full object-cover rounded-xl" />
-        <button class="absolute bottom-0 right-0  rounded-tl-[50px] bg-gray-100/90 p-[18px]">
-          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="add"/>
+        <img src="./assets/images/burger4.png" alt="The classics for 3" class="w-full h-full object-cover rounded-xl" />
+        <button class="absolute bottom-0 right-0 rounded-tl-[50px] bg-gray-100/90 p-[18px]" aria-label="Agregar al carrito">
+          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="Agregar"/>
         </button>
       </div>
-    </div>
+    </article>
 
-    <!-- Card 5 -->
-    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
+    <article class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
       <div class="flex flex-col justify-between p-[25px] flex-1">
         <div>
           <p class="font-semibold text-[20px] leading-tight">The classics for 3</p>
@@ -236,15 +193,14 @@
         <p class="font-bold text-[18px] mb-[36px]">GBP 23.10</p>
       </div>
       <div class="relative w-[203px] h-[199px] m-[25px] flex-shrink-0">
-        <img src="./assets/images/burger5.png" alt="burger" class="w-full h-full object-cover rounded-xl" />
-        <button class="absolute bottom-0 right-0  rounded-tl-[50px] bg-gray-100/90 p-[18px]">
-          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="add"/>
+        <img src="./assets/images/burger5.png" alt="The classics for 3" class="w-full h-full object-cover rounded-xl" />
+        <button class="absolute bottom-0 right-0 rounded-tl-[50px] bg-gray-100/90 p-[18px]" aria-label="Agregar al carrito">
+          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="Agregar"/>
         </button>
       </div>
-    </div>
+    </article>
 
-    <!-- Card 6 -->
-    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
+    <article class="bg-white rounded-xl shadow-lg flex overflow-hidden h-[245px]">
       <div class="flex flex-col justify-between p-[25px] flex-1">
         <div>
           <p class="font-semibold text-[20px] leading-tight">The classics for 3</p>
@@ -253,27 +209,25 @@
         <p class="font-bold text-[18px] mb-[36px]">GBP 23.10</p>
       </div>
       <div class="relative w-[203px] h-[199px] m-[25px] flex-shrink-0">
-        <img src="./assets/images/burger6.png" alt="burger" class="w-full h-full object-cover rounded-xl" />
-        <button class="absolute bottom-0 right-0  rounded-tl-[50px] bg-gray-100/90 p-[18px]">
-          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="add"/>
+        <img src="./assets/images/burger6.png" alt="The classics for 3" class="w-full h-full object-cover rounded-xl" />
+        <button class="absolute bottom-0 right-0 rounded-tl-[50px] bg-gray-100/90 p-[18px]" aria-label="Agregar al carrito">
+          <img class="w-[49px] h-[49px]" src="./assets/images/plus.png" alt="Agregar"/>
         </button>
       </div>
-    </div>
+    </article>
 
   </div>
-</div>
+</section>
 
-<!-- INFO SECTION -->
-<div class="mx-[100px] mt-[100px] rounded-xl overflow-hidden grid grid-cols-[2fr_1fr] h-[659px] shadow-xl ">
+<!-- Información -->
+<section class="mx-[100px] mt-[100px] rounded-xl overflow-hidden grid grid-cols-[2fr_1fr] h-[659px] shadow-xl">
 
-
-  <!-- IZQUIERDA: Delivery + Contact (fondo blanco) -->
   <div class="flex bg-[#FBFBFB]">
 
-    <!-- Delivery information -->
+    <!-- Entrega -->
     <div class="pt-[67px] pl-[56px] pb-[46px] pr-[40px] flex-1">
       <div class="flex items-center gap-3 mb-6">
-        <img src="./assets/images/location.png" alt="location" class="w-[32px] h-[32px]" />
+        <img src="./assets/images/location.png" alt="" class="w-[32px] h-[32px]" />
         <h3 class="font-bold text-[32px]">Delivery information</h3>
       </div>
       <ul class="text-[18px] space-y-2">
@@ -288,25 +242,25 @@
       </ul>
     </div>
 
-    <!-- Contact information -->
+    <!-- Contacto -->
     <div class="pt-[67px] pl-[56px] pb-[46px] pr-[40px] flex-1">
       <div class="flex items-center gap-3 mb-6">
-        <img src="./assets/images/contact.png" alt="contact" class="w-[32px] h-[32px]" />
+        <img src="./assets/images/contact.png" alt="" class="w-[32px] h-[32px]" />
         <h3 class="font-bold text-[32px]">Contact information</h3>
       </div>
       <p class="text-[18px] mb-6">If you have allergies or other dietary restrictions, please contact the restaurant. The restaurant will provide food-specific information upon request.</p>
       <p class="font-bold text-[18px]">Phone number</p>
       <p class="text-[24px] mb-4">+934443-43</p>
       <p class="font-bold text-[18px]">Website</p>
-      <a href="#" class="text-[24px] text-black">http://mcdonalds.uk/</a>
+      <a href="http://mcdonalds.uk/" class="text-[24px] text-black hover:underline">http://mcdonalds.uk/</a>
     </div>
 
   </div>
 
-  <!-- DERECHA: Operational Times (fondo oscuro) -->
+  <!-- Horario -->
   <div class="bg-[#03081F] text-white pt-[67px] pl-[56px] pb-[46px] pr-[40px]">
     <div class="flex items-center gap-3 mb-6">
-      <img src="./assets/images/time.png" alt="time" class="w-[32px] h-[32px]" />
+      <img src="./assets/images/time.png" alt="" class="w-[32px] h-[32px]" />
       <h3 class="font-bold text-[32px]">Operational Times</h3>
     </div>
     <ul class="text-[18px] space-y-2">
@@ -320,308 +274,258 @@
     </ul>
   </div>
 
-</div>
+</section>
 
-<!-- MAPA -->
-<div class="mx-[100px] mt-[100px]   rounded-xl overflow-hidden relative h-[659px]">
+<!-- Mapa -->
+<section class="mx-[100px] mt-[100px] rounded-xl overflow-hidden relative h-[659px]">
+  <img src="./assets/images/map.png" alt="Mapa McDonald's South London" class="absolute inset-0 w-full h-full object-cover" />
 
-  <!-- Mapa de fondo -->
-  <img src="./assets/images/map.png" alt="mapa" class="absolute inset-0 w-full h-full object-cover" />
-
-  <!-- Card oscura izquierda -->
+  <!-- Tarjeta -->
   <div class="absolute top-[49px] left-[129px] bottom-[71px] w-[380px] bg-[#03081F] text-white p-[40px] rounded-xl">
-    
-    <!-- Título -->
     <div class="absolute top-[125px] left-[40px]">
       <h3 class="font-bold text-[32px]">McDonald's</h3>
       <p class="text-[#FC8A06] font-semibold text-[18px]">South London</p>
     </div>
-
-    <!-- Info -->
-    <div class="absolute top-[188px] left-[40px] right-[40px]">
+    <address class="absolute top-[188px] left-[40px] right-[40px] not-italic">
       <p class="text-[18px] mt-[80px] mb-4">Tooley St, London Bridge, London SE1 2TF, United Kingdom</p>
       <p class="font-bold text-[18px]">Phone number</p>
-      <p class="text-[#FC8A06] text-[18px] mb-4">+934443-43</p>
+      <a href="tel:+93444343" class="text-[#FC8A06] text-[18px] mb-4 block">+934443-43</a>
       <p class="font-bold text-[18px]">Website</p>
-      <a href="#" class="text-[#FC8A06] text-[18px]">http://mcdonalds.uk/</a>
+      <a href="http://mcdonalds.uk/" class="text-[#FC8A06] text-[18px] hover:underline">http://mcdonalds.uk/</a>
+    </address>
+  </div>
+
+  <!-- Pin -->
+  <div class="absolute top-[28%] right-[10%] z-10 flex items-center">
+    <div class="bg-white rounded-xl px-12 py-3 shadow-lg whitespace-nowrap mr-[-20px] translate-y-[50%]">
+      <p class="font-bold text-sm">McDonald's</p>
+      <p class="text-gray-500 text-xs">South London</p>
     </div>
-
-  </div>
-
-<div class="absolute top-[28%] right-[10%] z-10 flex items-center">
-
-  <!-- Tooltip -->
-  <div class="bg-white rounded-xl px-12 py-3 shadow-lg whitespace-nowrap mr-[-20px] translate-y-[50%]">
-    <p class="font-bold text-sm">McDonald's</p>
-    <p class="text-gray-500 text-xs">South London</p>
-  </div>
-
-  <!-- Icono -->
-  <div class="bg-[#03081F] rounded-full p-3 z-10">
-    <img src="./assets/images/location-map.png" alt="pin" class="w-[50px] h-[50px]" />
-  </div>
-
-</div>
-
-
-</div><!-- REVIEWS -->
-<div class="bg-[#D9D9D9] h-[600px] relative">
-  <div class="mx-[100px] mt-[60px] pt-[92px]">
-  <h2 class="text-[44px] font-bold mb-6 " >Customer Reviews</h2>
-
-  <div class=" grid grid-cols-3 gap-4 h-[274px]  mt-[39px]">
-    
-
-  <!-- Review 1 -->
-<div class="bg-white rounded-[5px] relative h-[274px]">
-
-  <!-- Header -->
-  <div class="absolute top-[25px] left-[25px] right-[25px] flex items-center justify-between">
-    
-    <!-- Izquierda: foto + línea + nombre -->
-    <div class="flex items-center gap-3">
-      <img src="./assets/images/cus1.png" alt="customer" class="w-[60px] h-[60px] rounded-full" />
-      <div class="border-l-2 border-[#FC8A06] pl-3">
-        <p class="font-bold text-[16px]">St Glx</p>
-        <p class="text-[#FC8A06] text-[14px]">South London</p>
-      </div>
+    <div class="bg-[#03081F] rounded-full p-3 z-10">
+      <img src="./assets/images/location-map.png" alt="Ubicación" class="w-[50px] h-[50px]" />
     </div>
+  </div>
+</section>
 
-    <!-- Derecha: estrellas + reloj + fecha -->
-    <div class="flex flex-col items-end gap-1">
-          <div class="flex flex items-end gap-1">
+<!-- Reseñas -->
+<section class="bg-[#D9D9D9] min-h-[600px] relative">
+  <div class="mx-[100px] pt-[92px]">
+    <h2 class="text-[44px] font-bold mb-6">Customer Reviews</h2>
+    <div class="grid grid-cols-3 gap-4 mt-[39px]">
 
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
+      <article class="bg-white rounded-[5px] relative h-[274px]">
+        <div class="absolute top-[25px] left-[25px] right-[25px] flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="./assets/images/cus1.png" alt="St Glx" class="w-[60px] h-[60px] rounded-full" />
+            <div class="border-l-2 border-[#FC8A06] pl-3">
+              <p class="font-bold text-[16px]">St Glx</p>
+              <p class="text-[#FC8A06] text-[14px]">South London</p>
             </div>
-      <div class="flex items-center gap-2">
-        <img src="./assets/images/time-review.png" alt="time" class="w-[16px] h-[16px]" />
-        <p class="text-[14px] text-gray-500">24th September, 2023</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Texto review -->
-  <p class="absolute top-[120px] left-[25px] right-[25px] text-[16px] text-gray-700 leading-relaxed">
-    The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
-  </p>
-
-</div>
-  <!-- Review 2 -->
-<div class="bg-white rounded-[5px]  relative h-[274px]">
-
-  <!-- Header -->
-  <div class="absolute top-[25px] left-[25px] right-[25px] flex items-center justify-between">
-    
-    <!-- Izquierda: foto + línea + nombre -->
-    <div class="flex items-center gap-3">
-      <img src="./assets/images/cus1.png" alt="customer" class="w-[60px] h-[60px] rounded-full" />
-      <div class="border-l-2 border-[#FC8A06] pl-3">
-        <p class="font-bold text-[16px]">St Glx</p>
-        <p class="text-[#FC8A06] text-[14px]">South London</p>
-      </div>
-    </div>
-
-    <!-- Derecha: estrellas + reloj + fecha -->
-    <div class="flex flex-col items-end gap-1">
-          <div class="flex flex items-end gap-1">
-
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <div class="flex items-center gap-1">
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
             </div>
-      <div class="flex items-center gap-2">
-        <img src="./assets/images/time-review.png" alt="time" class="w-[16px] h-[16px]" />
-        <p class="text-[14px] text-gray-500">24th September, 2023</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Texto review -->
-  <p class="absolute top-[120px] left-[25px] right-[25px] text-[16px] text-gray-700 leading-relaxed">
-    The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
-  </p>
-
-</div>
-  <!-- Review 3 -->
-<div class="bg-white rounded-[5px]  relative h-[274px]">
-
-  <!-- Header -->
-  <div class="absolute top-[25px] left-[25px] right-[25px] flex items-center justify-between">
-    
-    <!-- Izquierda: foto + línea + nombre -->
-    <div class="flex items-center gap-3">
-      <img src="./assets/images/cus1.png" alt="customer" class="w-[60px] h-[60px] rounded-full" />
-      <div class="border-l-2 border-[#FC8A06] pl-3">
-        <p class="font-bold text-[16px]">St Glx</p>
-        <p class="text-[#FC8A06] text-[14px]">South London</p>
-      </div>
-    </div>
-
-    <!-- Derecha: estrellas + reloj + fecha -->
-    <div class="flex flex-col items-end gap-1">
-          <div class="flex flex items-end gap-1">
-
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
-      <img src="./assets/images/stars-review.png" alt="stars" class="w-[16px] h-[16px]" />
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/time-review.png" alt="" class="w-[16px] h-[16px]" />
+              <time class="text-[14px] text-gray-500">24th September, 2023</time>
             </div>
-      <div class="flex items-center gap-2">
-        <img src="./assets/images/time-review.png" alt="time" class="w-[16px] h-[16px]" />
-        <p class="text-[14px] text-gray-500">24th September, 2023</p>
-      </div>
+          </div>
+        </div>
+        <p class="absolute top-[120px] left-[25px] right-[25px] text-[16px] text-gray-700 leading-relaxed">
+          The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
+        </p>
+      </article>
+
+      <article class="bg-white rounded-[5px] relative h-[274px]">
+        <div class="absolute top-[25px] left-[25px] right-[25px] flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="./assets/images/cus1.png" alt="St Glx" class="w-[60px] h-[60px] rounded-full" />
+            <div class="border-l-2 border-[#FC8A06] pl-3">
+              <p class="font-bold text-[16px]">St Glx</p>
+              <p class="text-[#FC8A06] text-[14px]">South London</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <div class="flex items-center gap-1">
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/time-review.png" alt="" class="w-[16px] h-[16px]" />
+              <time class="text-[14px] text-gray-500">24th September, 2023</time>
+            </div>
+          </div>
+        </div>
+        <p class="absolute top-[120px] left-[25px] right-[25px] text-[16px] text-gray-700 leading-relaxed">
+          The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
+        </p>
+      </article>
+
+      <article class="bg-white rounded-[5px] relative h-[274px]">
+        <div class="absolute top-[25px] left-[25px] right-[25px] flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="./assets/images/cus1.png" alt="St Glx" class="w-[60px] h-[60px] rounded-full" />
+            <div class="border-l-2 border-[#FC8A06] pl-3">
+              <p class="font-bold text-[16px]">St Glx</p>
+              <p class="text-[#FC8A06] text-[14px]">South London</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-end gap-1">
+            <div class="flex items-center gap-1">
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+              <img src="./assets/images/stars-review.png" alt="" class="w-[16px] h-[16px]" />
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/time-review.png" alt="" class="w-[16px] h-[16px]" />
+              <time class="text-[14px] text-gray-500">24th September, 2023</time>
+            </div>
+          </div>
+        </div>
+        <p class="absolute top-[120px] left-[25px] right-[25px] text-[16px] text-gray-700 leading-relaxed">
+          The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
+        </p>
+      </article>
+
     </div>
-
   </div>
 
-  <!-- Texto review -->
-  <p class="absolute top-[120px] left-[25px] right-[25px] text-[16px] text-gray-700 leading-relaxed">
-    The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
-  </p>
-
-</div>
-</div>
-
-  </div>
-
-  <!-- Rating centrado a mitad del borde inferior -->
+  <!-- Rating -->
   <div class="absolute bottom-0 left-1/2 translate-x-[-50%] translate-y-[30%] bg-white rounded-xl text-center shadow-lg z-10 h-[153px] w-[178px]">
-    <img src="./assets/images/estrellas.png" alt="stars" class="w-[178px] mx-auto my-2" />
+    <img src="./assets/images/estrellas.png" alt="Rating 3.4" class="w-[178px] mx-auto my-2" />
   </div>
-</div>
+</section>
 
-<!-- SIMILAR RESTAURANTS -->
-<div class="mx-[100px] mb-[60px]">
+<!-- Similares -->
+<section class="mx-[100px] mb-[60px]">
   <h2 class="ml-[21px] text-[32px] font-bold mb-6 mt-[124px]">Similar Restaurants</h2>
+  <div class="grid grid-cols-6 gap-5 mt-[51px]">
 
-  <div class="grid grid-cols-6 gap-5 h-[266px] mt-[51px]">
-
-    <!-- Brand 1 -->
-    <div class="rounded-xl overflow-hidden relative ">
-      <img src="./assets/images/brand1.png" alt="McDonald's" class="w-full h-[203px] object-cover" />
+    <article class="rounded-xl overflow-hidden">
+      <img src="./assets/images/brand1.png" alt="McDonald's London" class="w-full h-[203px] object-cover" />
       <div class="bg-[#FC8A06] text-white text-center py-2">
         <p class="font-bold text-[18px]">McDonald's London</p>
       </div>
-    </div>
+    </article>
 
-    <!-- Brand 2 -->
-    <div class="rounded-xl overflow-hidden relative">
+    <article class="rounded-xl overflow-hidden">
       <img src="./assets/images/brand2.png" alt="Papa Johns" class="w-full h-[203px] object-cover" />
       <div class="bg-[#FC8A06] text-white text-center py-2">
         <p class="font-bold text-[18px]">Papa Johns</p>
       </div>
-    </div>
+    </article>
 
-    <!-- Brand 3 -->
-    <div class="rounded-xl overflow-hidden relative">
-      <img src="./assets/images/brand3.png" alt="KFC" class="w-full h-[203px] object-cover" />
+    <article class="rounded-xl overflow-hidden">
+      <img src="./assets/images/brand3.png" alt="KFC West London" class="w-full h-[203px] object-cover" />
       <div class="bg-[#FC8A06] text-white text-center py-2">
         <p class="font-bold text-[18px]">KFC West London</p>
       </div>
-    </div>
+    </article>
 
-    <!-- Brand 4 -->
-    <div class="rounded-xl overflow-hidden relative">
+    <article class="rounded-xl overflow-hidden">
       <img src="./assets/images/brand4.png" alt="Texas Chicken" class="w-full h-[203px] object-cover" />
       <div class="bg-[#FC8A06] text-white text-center py-2">
         <p class="font-bold text-[18px]">Texas Chicken</p>
       </div>
-    </div>
+    </article>
 
-    <!-- Brand 5 -->
-    <div class="rounded-xl overflow-hidden relative">
+    <article class="rounded-xl overflow-hidden">
       <img src="./assets/images/brand5.png" alt="Burger King" class="w-full h-[203px] object-cover" />
       <div class="bg-[#FC8A06] text-white text-center py-2">
         <p class="font-bold text-[18px]">Burger King</p>
       </div>
-    </div>
+    </article>
 
-    <!-- Brand 6 -->
-    <div class="rounded-xl overflow-hidden relative">
-      <img src="./assets/images/brand6.png" alt="Shaurma" class="w-full h-[203px] object-cover" />
+    <article class="rounded-xl overflow-hidden">
+      <img src="./assets/images/brand6.png" alt="Shaurma 1" class="w-full h-[203px] object-cover" />
       <div class="bg-[#FC8A06] text-white text-center py-2">
         <p class="font-bold text-[18px]">Shaurma 1</p>
       </div>
-    </div>
+    </article>
 
   </div>
-</div>
+</section>
 
-<!-- FOOTER GRIS -->
-<div class="bg-[#D9D9D9] relative" style="height: 350px;">
-  <div class="mx-[100px] h-full grid grid-cols-[2fr_2fr_1fr_1fr]">
+<!-- Footer -->
+<footer>
 
-    <!-- Columna 1: Logo + apps + texto -->
-    <div class="relative">
-      <img src="./assets/images/logo-order.png" alt="logo" class="absolute top-[93px] h-[66px]" />
-      <div class="absolute top-[170px] flex gap-1">
-        <img src="./assets/images/appstore.png" alt="App Store" class="h-[40px] bg-black px-[12px] py-[5px] rounded-[5px]" />
-        <img src="./assets/images/googleplay.png" alt="Google Play" class="h-[40px] bg-black px-[12px] py-[5px] rounded-[5px]" />
+  <!-- Superior -->
+  <div class="bg-[#D9D9D9] relative min-h-[350px]">
+    <div class="mx-[100px] h-full grid grid-cols-[2fr_2fr_1fr_1fr] pt-[93px] pb-[40px]">
+
+      <!-- Logo -->
+      <div class="relative">
+        <img src="./assets/images/logo-order.png" alt="OrderX logo" class="absolute top-0 h-[66px]" />
+        <div class="absolute top-[77px] flex gap-1">
+          <img src="./assets/images/appstore.png" alt="App Store" class="h-[40px] bg-black px-[12px] py-[5px] rounded-[5px]" />
+          <img src="./assets/images/googleplay.png" alt="Google Play" class="h-[40px] bg-black px-[12px] py-[5px] rounded-[5px]" />
+        </div>
+        <p class="absolute top-[137px] text-[15px] font-normal w-[200px] text-gray-700">
+          Company # 490039-445, Registered with House of companies.
+        </p>
       </div>
-      <p class="absolute top-[230px]  text-[15px] font-normal w-[200px] text-gray-700">
-        Company # 490039-445, Registered with House of companies.
-      </p>
-    </div>
 
-    <!-- Columna 2: Email subscribe + redes -->
-    <div class="relative">
-      <p class="absolute top-[93px] left-0 text-[18px] font-bold">Get Exclusive Deals in your Inbox</p>
-      <div class="absolute top-[125px] left-0 right-[20px] flex ">
-        <input type="text" placeholder="youremail@gmail.com" class="px-4 mt-[23px] py-3 rounded-l-full outline-none text-[15px] bg-white" />
-        <button class="bg-[#FC8A06] text-white px-6 py-3 rounded-r-full  px-4 mt-[23px] text-[15px] font-semibold">Subscribe</button>
+      <!-- Suscripción -->
+      <div class="relative">
+        <p class="absolute top-0 left-0 text-[18px] font-bold">Get Exclusive Deals in your Inbox</p>
+        <div class="absolute top-[32px] left-0 right-[20px] flex">
+          <input type="email" placeholder="youremail@gmail.com" class="px-4 mt-[23px] py-3 rounded-l-full outline-none text-[15px] bg-white flex-1" />
+          <button class="bg-[#FC8A06] text-white px-6 rounded-r-full mt-[23px] text-[15px] font-semibold">Subscribe</button>
+        </div>
+        <p class="absolute top-[100px] left-0 text-[13px] text-black px-4">we wont spam, read our <a href="#" class="underline">email policy</a></p>
+        <div class="absolute top-[127px] left-0 flex gap-4 px-4">
+          <img src="./assets/images/facebook.png" alt="Facebook" class="w-[35px] h-[35px]" />
+          <img src="./assets/images/instagram-2.png" alt="Instagram" class="w-[35px] h-[35px]" />
+          <img src="./assets/images/tiktok.png" alt="TikTok" class="w-[35px] h-[35px]" />
+          <img src="./assets/images/snapchat.png" alt="Snapchat" class="w-[35px] h-[35px]" />
+        </div>
       </div>
-      <p class="absolute top-[185px] left-0 text-[13px] text-black  px-4 mt-[15px]">we wont spam, read our <a href="#" class="underline">email policy</a></p>
-      <div class="absolute top-[220px] left-0 flex gap-4 mt-[10px] px-4">
-        <img src="./assets/images/facebook.png" alt="facebook" class="w-[35px] h-[35px]" />
-        <img src="./assets/images/instagram-2.png" alt="instagram" class="w-[35px] h-[35px]" />
-        <img src="./assets/images/tiktok.png" alt="tiktok" class="w-[35px] h-[35px]" />
-        <img src="./assets/images/snapchat.png" alt="snapchat" class="w-[35px] h-[35px]" />
+
+      <!-- Legal -->
+      <div class="relative">
+        <p class="absolute top-0 left-0 text-[18px] font-bold">Legal Pages</p>
+        <a href="#" class="absolute top-[37px] left-0 text-[15px] text-gray-700 hover:underline">Terms and conditions</a>
+        <a href="#" class="absolute top-[67px] left-0 text-[15px] text-gray-700 hover:underline">Privacy</a>
+        <a href="#" class="absolute top-[97px] left-0 text-[15px] text-gray-700 hover:underline">Cookies</a>
+        <a href="#" class="absolute top-[127px] left-0 text-[15px] text-gray-700 hover:underline">Modern Slavery Statement</a>
       </div>
-    </div>
 
-    <!-- Columna 3: Legal Pages -->
-    <div class="relative">
-      <p class="absolute top-[93px] left-0 text-[18px] font-bold">Legal Pages</p>
-      <a href="#" class="absolute top-[130px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Terms and conditions</a>
-      <a href="#" class="absolute top-[160px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Privacy</a>
-      <a href="#" class="absolute top-[190px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Cookies</a>
-      <a href="#" class="absolute top-[220px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Modern Slavery Statement</a>
-    </div>
+      <!-- Links -->
+      <div class="relative">
+        <p class="absolute top-0 left-0 text-[18px] font-bold">Important Links</p>
+        <a href="#" class="absolute top-[37px] left-0 text-[15px] text-gray-700 hover:underline">Get help</a>
+        <a href="#" class="absolute top-[67px] left-0 text-[15px] text-gray-700 hover:underline">Add your restaurant</a>
+        <a href="#" class="absolute top-[97px] left-0 text-[15px] text-gray-700 hover:underline">Sign up to deliver</a>
+        <a href="#" class="absolute top-[127px] left-0 text-[15px] text-gray-700 hover:underline">Create a business account</a>
+      </div>
 
-    <!-- Columna 4: Important Links -->
-    <div class="relative">
-      <p class="absolute top-[93px] left-0 text-[18px] font-bold">Important Links</p>
-      <a href="#" class="absolute top-[130px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Get help</a>
-      <a href="#" class="absolute top-[160px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Add your restaurant</a>
-      <a href="#" class="absolute top-[190px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Sign up to deliver</a>
-      <a href="#" class="absolute top-[220px] left-0 text-[15px] font-normal text-gray-700 hover:underline">Create a business account</a>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- FOOTER OSCURO -->
-<div class="bg-[#03081F] text-white">
-  <div class="mx-[100px] py-[20px] flex items-center justify-between">
-    <p class="text-[15px] font-normal text-gray-400">Order.uk Copyright 2024, All Rights Reserved.</p>
-    <div class="flex gap-6 text-[15px] font-normal text-gray-400">
-      <a href="#" class="hover:text-white">Privacy Policy</a>
-      <a href="#" class="hover:text-white">Terms</a>
-      <a href="#" class="hover:text-white">Pricing</a>
-      <a href="#" class="hover:text-white">Do not sell or share my personal information</a>
     </div>
   </div>
-</div>
+
+  <!-- Inferior -->
+  <div class="bg-[#03081F] text-white">
+    <div class="mx-[100px] py-[20px] flex items-center justify-between">
+      <p class="text-[15px] text-gray-400">Order.uk Copyright 2024, All Rights Reserved.</p>
+      <nav class="flex gap-6 text-[15px] text-gray-400">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms</a>
+        <a href="#" class="hover:text-white">Pricing</a>
+        <a href="#" class="hover:text-white">Do not sell or share my personal information</a>
+      </nav>
+    </div>
+  </div>
+
+</footer>
 
 </body>
 </html>
